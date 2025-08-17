@@ -1,0 +1,75 @@
+@import "tailwindcss";
+:root {
+  --background: #080807;
+  --foreground: #ffffff;
+  --silverLight: #e5e7eb;
+  --silverText: #a29e9a;
+  --silverTextSecondary: #7e766c;
+  --silverMain: #d1d1c7;
+  --creamBackground: #f9f9f6;
+  --creamText: #6b645c;
+  --darkBackground: #393632;
+  --text-xxs-font-size: 0.6rem;
+  --text-xxs-line-height: 150%;
+  --borderColor: #393632;
+  --borderColorSecond: #bfbfb1;
+}
+html {
+  scroll-behavior: smooth;
+}
+.text-xxs {
+  font-size: var(--text-xxs-font-size);
+  line-height: var(--text-xxs-line-height);
+}
+.morph {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.image-animation {
+  display: block;
+  clip-path: inset(0% 0% 0% 0%);
+}
+.button-animation {
+  display: block;
+  clip-path: inset(0% 0% 0% 0%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-anonymous: var(--font-anonymous);
+  --color-silverLight: var(--silverLight);
+  --color-silverTextSecondary: var(--silverTextSecondary);
+  --color-creamText: var(--creamText);
+  --color-borderColor: var(--borderColor);
+  --color-borderColorSecond: var(--borderColorSecond);
+  --color-silverText: var(--silverText);
+  --color-creamBackground: var(--creamBackground);
+  --color-silverMain: var(--silverMain);
+  --color-darkBackground: var(--darkBackground);
+  --font-popins: var(--font-popins);
+}
+body {
+  background: var(--creamBackground);
+}
+
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+
+  overflow: hidden; /* Prevent scroll, optional */
+  overflow: scroll; /* If you want scroll functionality but no scrollbar */
+}
+
+/* Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
