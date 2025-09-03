@@ -25,6 +25,6 @@ export const workArray = [
     videoLink: "/images/db2.jpg",
     projectDescription: "Case Study",
     projectName: "Swiggy Market Campaign Case Study",
-    imageLink: "/images/bgImage4.webp",
+    imageLink: "/images/bgImage5.webp",
   },
 ];
