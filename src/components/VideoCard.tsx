@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -18,7 +19,7 @@ export default function VideoCard({ cardInfo, className, id }: { cardInfo: Video
       <div className="max-w-full aspect-square relative" onClick={() => router.push(cardInfo.projectLink)}>
         <img className="w-full h-full object-cover rounded-lg " src={cardInfo.imageLink} alt="s" />
         <div className="absolute z-10 w-full h-full flex justify-center items-center top-0 px-12 left-0">
-          <video autoPlay loop muted playsInline className="w-full aspect-[1.3/1] object-cover rounded-lg " src={cardInfo.videoLink} />
+          <img className="w-full aspect-[1.3/1] object-cover rounded-lg" src={cardInfo.videoLink} />
         </div>
       </div>
       <div className="mt-2 mb-3" style={{ lineHeight: 1.2 }}>

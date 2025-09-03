@@ -7,11 +7,17 @@ export default function SkillSection() {
   return (
     <section id="about" className="bg-background skillCard rounded-b-xl w-full z-10 ">
       <nav className="grid sm:grid-rows-2 mt-[10vh] lg:grid-cols-2 lg:grid-rows-1">
-        <h3 style={{}} className="text-[12vw] hidden sm:flex  font-popins text-silverMain row-start-2  justify-center items-center text-center md:row-start-1 lg:col-span-1  lg:text-[7vw]">
-          Data & Business Analyst
+        <h3
+          style={{}}
+          className="text-[12vw] hidden sm:flex  font-popins text-silverMain row-start-2  justify-center items-center text-center md:row-start-1 lg:col-span-1  lg:text-[7vw]"
+        >
+          Data & Business Analyst (Consulting)
         </h3>
         <div className="row-start-1 flex flex-col gap-[6vh]  md:row-start-2 lg:col-span-1 lg:row-start-1">
-          <h1 style={{ fontWeight: 600 }} className="tracking-tighter text-silverMain w-fit mx-auto text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-popins-700 charsReveling-animation">
+          <h1
+            style={{ fontWeight: 600 }}
+            className="tracking-tighter text-silverMain w-fit mx-auto text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-popins-700 charsReveling-animation"
+          >
             Skills
           </h1>
           <SkillTable />

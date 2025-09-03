@@ -31,7 +31,7 @@ export default function Header({ scrollRef }: { scrollRef: RefObject<globalThis.
         <div className="max-h-16 max-w-16 rounded-full">
           <img src="/images/db2.jpg" alt="" className="object-cover max-w-full max-h-full  rounded-full aspect-square" />
         </div>
-          Data & Business Analyst
+        Data & Business Analyst (Consulting)
       </div>
       <div className="col-span-1 flex w-full  justify-end gap-2 md:items-start">
         <div className="flex flex-col md:flex-row">
